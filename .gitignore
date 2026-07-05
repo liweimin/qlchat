@@ -1,0 +1,9 @@
+node_modules/
+.venv/
+.qlchat-browser-profile/
+qlchat-profile/
+downloads/
+build/
+__pycache__/
+*.spec
+*.tmp
