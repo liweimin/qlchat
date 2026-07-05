@@ -55,7 +55,7 @@ python -m venv .venv
 .\scripts\build-windows.ps1
 ```
 
-构建产物是仓库根目录的 `qlchat-downloader.exe`。该 exe 通过 Git LFS 跟踪。
+构建产物是仓库根目录的 `qlchat-downloader.exe`。exe 是构建结果，不提交到 Git；本地测试或 GitHub Actions 构建后再分发。
 
 ## GitHub 构建
 
