@@ -60,3 +60,14 @@ python -m venv .venv
 ## GitHub 构建
 
 仓库包含 `.github/workflows/build-windows.yml`。推送到 `main` 或手动运行 workflow 后，GitHub Actions 会在 Windows 环境构建 `qlchat-downloader.exe` 并上传 artifact。
+
+## 发布 Release
+
+发布新版本时打 tag，例如：
+
+```powershell
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+仓库包含 `.github/workflows/release-windows.yml`。推送 `v*` tag 后，GitHub Actions 会重新构建 Windows exe，执行 smoke test，并把 `qlchat-downloader.exe` 上传到对应 GitHub Release。
